@@ -22,6 +22,7 @@ const config: KnexConfig = {
 		},
 		seeds: {
 			directory: './db/seeds',
+			extension: 'ts'
 		},
 	},
 	production: {
@@ -33,6 +34,7 @@ const config: KnexConfig = {
 		},
 		seeds: {
 			directory: './db/seeds',
+			extension: 'ts'
 		},
 	  },
 };
