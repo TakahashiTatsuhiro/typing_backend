@@ -1,5 +1,5 @@
-import dotenv from 'dotenv';
-dotenv.config({ path: './.env' }); //相対パスの起点はこのファイルがある階層ではなくアプリを起動する階層なので、この指示が正しい。
+// import dotenv from 'dotenv';
+// dotenv.config({ path: './.env' }); //相対パスの起点はこのファイルがある階層ではなくアプリを起動する階層なので、この指示が正しい。
 
 import { Knex } from 'knex';
 
@@ -23,6 +23,16 @@ const config: KnexConfig = {
 			directory: './db/seeds',
 		},
 	},
+	production: {
+		client: 'pg',
+		connection: process.env.DATABASE_URL,
+		migrations: {
+			directory: './db/migrations',
+		},
+		seeds: {
+			directory: './db/seeds',
+		},
+	  },
 };
 
 export default config;
