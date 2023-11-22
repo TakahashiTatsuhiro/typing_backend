@@ -25,7 +25,8 @@
     "express-session": "^1.17.3",
     "knex": "^3.0.1",
     "pg": "^8.11.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.16",
