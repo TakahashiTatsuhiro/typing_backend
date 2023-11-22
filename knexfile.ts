@@ -18,6 +18,7 @@ const config: KnexConfig = {
 		},
 		migrations: {
 			directory: './db/migrations',
+			extension: 'ts'
 		},
 		seeds: {
 			directory: './db/seeds',
@@ -28,6 +29,7 @@ const config: KnexConfig = {
 		connection: process.env.DATABASE_URL,
 		migrations: {
 			directory: './db/migrations',
+			extension: 'ts'
 		},
 		seeds: {
 			directory: './db/seeds',
